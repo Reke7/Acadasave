@@ -706,6 +706,11 @@ footer
         margin-top: 3em;
     }
 
+    .about__img, .hero__img
+    {
+        margin-top: 2em;
+    }
+
 }
 
 @media (max-width: 400px)
