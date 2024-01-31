@@ -343,24 +343,26 @@ svg
     background-color: #494FF4;
     color: #fff;
     width: 70%;
+    padding: 2em 1em;
     margin: 0 auto;
-    min-height: 200px;
     border-radius: 10px;
     position: absolute;
+    bottom: 200px;
+    left: 200px;
     /* left: 200px;
     top: 3750px; */
-    top: 685%;
-    left: 15%;
+    /* top: 685%;
+    left: 15%; */
 }
 
 .cta__body
 {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto;
     text-align: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .cta__heading
@@ -377,8 +379,8 @@ svg
 {
     cursor: pointer;
     border: none;
-    width: 90%;
-    padding: 2em 0;
+    /* width: 90%; */
+    padding: 1.3em 1.8em;
     border-radius: 6px;
     font-weight: bold;
     text-transform: uppercase;
@@ -517,15 +519,13 @@ footer
     } */
 }
 
-@media (max-width: 500px)
+@media (max-width: 400px)
 {
     .cta
     {
         position: absolute;
-        left: 110px;
-        bottom: 2px;
-        top: 0;
-        padding: 1em;
+        left: 50px;
+        bottom: 100px;
     }
 }
 
@@ -614,7 +614,7 @@ footer
 
     .package 
     {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -625,7 +625,7 @@ footer
 
     .tes
     {
-        width: 60%;
+        width: 80%;
         padding: 1em;
     }
 
@@ -639,12 +639,29 @@ footer
         width: 100%;
     }
 
-    .cta
+    /* .cta
     {
         border-radius: 10px;
         position: absolute;
         left: 60px;
         top: 6400px;
+    } */
+
+    .cta
+    {
+        bottom: 300px;
+        left: 100px;
+    }
+
+    .cta__body.row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta__body
+    {
+        text-align: center;
     }
 
     .cta__heading
@@ -667,15 +684,26 @@ footer
     {
         width: 100%;
     }
+    
+    .footer__body
+    {
+        width: 100%;
+    }
 
     .footer__logos
     {
         width: 40%;
     }
 
+    .footer__logos.row
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .footer__links
     {
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
 }
@@ -684,7 +712,18 @@ footer
 {
     .cta
     {
-        top: 6500px;
+        width: 100%;
+        left: 0px;
+        bottom: 350px;
     }
 }
 
+@media (max-width: 300px)
+{
+    .cta
+    {
+        width: 100%;
+        padding: 1em 0.8em;
+        bottom: 430px;
+    }
+}
