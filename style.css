@@ -37,7 +37,7 @@ header
     height: 3em;
     padding: 0em;
     border-radius: 50%;
-    background: #072A2D;
+    background: rgba(55, 43, 122, 0.882);
     color: white;
     transition: opacity 250ms ease;
     
