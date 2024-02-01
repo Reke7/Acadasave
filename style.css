@@ -314,7 +314,7 @@ svg
 .tes
 {
     width: 20%;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 .tes__body
@@ -568,8 +568,16 @@ footer
     }
 }
 
-@media (max-width: 800px)
+@media (max-width: 1000px)
 {
+
+    .package__cards.row,
+    .feature__cards.row,
+    .testimonial .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
     .nav__list
     {
         list-style: none;
@@ -688,7 +696,7 @@ footer
 
     .cta
     {
-        bottom: 300px;
+        bottom: 200px;
         left: 0px;
         width: 100%;
     }
@@ -772,6 +780,22 @@ footer
 
 }
 
+@media (max-width: 800px)
+{
+    .cta
+    {
+        bottom: 280px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .cta
+    {
+        bottom: 300px;
+    }
+}
+
 @media (max-width: 400px)
 {
     .cta
@@ -787,7 +811,6 @@ footer
     .cta
     {
         width: 100%;
-        padding: 1em 0.8em;
-        bottom: 430px;
+        bottom: 350px;
     }
 }
