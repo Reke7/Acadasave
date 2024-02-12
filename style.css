@@ -626,6 +626,7 @@ footer
     .hero__text
     {
         width: 100%;
+        text-align: center;
     }
 
     .heading
@@ -652,6 +653,7 @@ footer
     .about__text
     {
         width: 100%;
+        text-align: center;
     }
 
     .about__img
@@ -778,6 +780,10 @@ footer
         font-size: 1.8rem;
     }
 
+    .feature__heading
+    {
+        text-align: center;
+    }
 }
 
 @media (max-width: 800px)
